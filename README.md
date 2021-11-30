@@ -109,3 +109,4 @@ Para jugar:
 - [Cuadrículas para dibujar en WORD desde cero](https://www.youtube.com/watch?v=Qfhf6i_Yjkc)
 - [Unsplash photo](https://unsplash.com/photos/1cvEeuJKYto) by [Larm Rmah](https://unsplash.com/@larm)
 - [Imágenes del código por Carbon](https://carbon.now.sh/)
+- [Compresor de imágenes](https://compresspng.com/)
