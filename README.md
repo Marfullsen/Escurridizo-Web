@@ -1,16 +1,15 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="./docs/img/matrix.png" alt="Matrix"></a>
+  <a href="https://marfullsen.github.io/Escurridizo-the-game/" rel="noopener">
+ <img width=400px height=400px src="./docs/img/escurridizo-web.png" alt="Versión web"></a>
 </p>
 
 <h3 align="center">Escurridizo, la ratita de Dagoberto</h3>
 
 <div align="center">
 
-
 [![Forked](https://img.shields.io/badge/Forked%20from-ripexz-green)](https://github.com/ripexz/dungeon-treasure-hunt)
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![Pascal Code](https://img.shields.io/badge/Code-Pascal-blue.svg)](https://github.com/Marfullsen/hybrid-collage/blob/master/game-escurridizo.pas)
+[![PlayHere!](https://img.shields.io/github/Play-Here-darkgreen.svg)](https://marfullsen.github.io/Escurridizo-the-game/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.txt)
 
 </div>
@@ -19,108 +18,89 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
+## 📝 Contenidos
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Sobre el juego](#about)
+- [Versiones](#getting_started)
+- [Desarrollo](#deployment)
+- [¿Cómo se juega?](#usage)
+- [Tecnologías usadas](#built_using)
+- [Autores](#authors)
+- [Agradecimientos](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Sobre el juego <a name = "about"></a>
 
 Escurridizo fue un problema planteado para el segundo certamen de la asignatura **Fundamentos de Programación**, en la Universidad Técnica Federico Santa María. El problema planteado se basa en un ratoncito atrapado en un laberinto dentro del cuál hay un queso, una trampa y una salida. El certamen constaba de 90 minutos para realizar **un código escrito a mano** en una hoja cuadriculada usando el lenguaje de programación **Pascal** o Pseudo-Lenguaje.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+<p align="center">
+  <a href="https://marfullsen.github.io/Escurridizo-the-game/" rel="noopener">
+ <img width=200px height=200px src="./docs/img/matrix.png" alt="Matrix"></a>
+</p>
+
+Una vez terminado el certamen, me dispuse a realizar un algoritmo que creara una matriz para un laberinto que siempre fuera distinto, a ese código le llamé **motor para crear laberintos al azar**. Escribí el código del motor en lenguaje **Python** e hice la adaptación para que funcionara en JavaScript, logrando así reemplazar _el motor lógico_ al código del juego [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) escrito por [ripexz](https://github.com/ripexz/).
+
+## 🏁 Versiones <a name = "getting_started"></a>
 
 El desarrollo del juego se divide en tres partes:
-1. Realización del certamen escrito con código en Pascal.
-2. Transcripción, corrección y adaptación del código en Pascal hacia Python3
-3. Inserción del código generador de laberintos dentro de algún otro juego similar, reemplazando "El motor".
+1. Realización del certamen escrito a mano con código en **Pascal**.
+  - Una versión mejorada del código puede encontrarse en [hybrid-collage/game-escurridizo.pas](https://github.com/Marfullsen/hybrid-collage/blob/master/game-escurridizo.pas) y ejecutarse [online](https://www.onlinegdb.com/online_pascal_compiler) para disfrutar del juego.
+2. Creación de un _motor lógico_ que genera laberintos aleatorios escrito con **Python**.
+  - Una versión muy rústica puede ser encontrada aqui en [laberinto_a_puntos.py](./docs/code/laberinto_a_puntos.py)
 
-Ver [Desarrollo](#deployment) para más información.
+<p align="center">
+  <a href="./docs/code/laberinto_a_puntos.py" rel="noopener">
+ <img width=200px height=200px src="./docs/img/escurridizo-python.png" alt="Juego python"></a>
+</p>
 
-### Prerequisites
+3. Transcripción del _motor lógico_ al lenguaje JavaScript para reemplazar el motor de [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) y crear la versión definitiva de [Escurridizo](https://marfullsen.github.io/Escurridizo-the-game/).
 
-Se recomienda tener instalado Python3 para  ojear el motor inicial.
+## 🚀 Desarrollo <a name = "deployment"></a>
+Se recomienda levantar un servidor, aunque también funcionará ingresando directamente al archivo **index.html** con un navegador.
 
-Para ver el motor funcionando con GUI, ir directamente a la página web.
-
-```
-Python
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+**Listado de servidores**
+- [HTTP server](https://www.npmjs.com/package/http-server)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ```
-Give the example
+cd Escurridizo-the-game
+http-server.cmd
 ```
 
-And repeat
+Abrir [http://localhost:8080/](http://localhost:8080/) o [http://127.0.0.1:8080/](http://127.0.0.1:8080/) en el navegador.
 
-```
-until finished
-```
+## 🎈 ¿Cómo se juega? <a name="usage"></a>
 
-End with an example of getting some data out of the system or using it for a little demo.
+Para jugar: 
+- **Las flechas de dirección** para desplazamiento.
+- Tecla **Espacio** para plantar una bomba.
 
-## 🔧 Running the tests <a name = "tests"></a>
+## ⛏️ Tecnologías usadas <a name = "built_using"></a>
 
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-### Sketch
+### 🔧 Bosquejos
 - [Pascal](https://www.freepascal.org/) - Programming language
 - [Python](https://www.python.org/) - Programming language
+- [Vanilla JavaScript](https://www.javascript.com/) - Programming language
 
-### From forked
+### 🔧 De la bifurcación (del Fork).
 - [Mdernizr](https://modernizr.com/) -  JavaScript library
 - [Sizzle](https://sizzlejs.com/) - Hot Selector Engine.
 
-## ✍️ Authors <a name = "authors"></a>
+## ✍️ Autores <a name = "authors"></a>
 
-- [@Marfullsen](https://github.com/Marfullsen/) - Sketch for a Maze Game and adapted another game to finish the sketch.
+- [@Marfullsen](https://github.com/Marfullsen/) - Sketch for a Maze Game and deleloped a _logic motor_.
 
-### Forked from
+<p align="center">
+  <a href="./docs/img/labyrinth-sketch.png" rel="noopener">
+ <img width=200px height=200px src="./docs/img/labyrinth-sketch.png" alt="Bosquejos"></a>
+</p>
+
+### Bifurcado de (Forkeado de)
 - [@ripexz](https://github.com/ripexz/) - Developed a Bomberman-like game.
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+## 🎉 Agradecumientos <a name = "acknowledgement"></a>
 
 - [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) by [ripexz](https://github.com/ripexz/)
 - [Mixkit Free-sound-effects](https://mixkit.co/free-sound-effects/)
 - [Cuadrículas para dibujar en WORD desde cero](https://www.youtube.com/watch?v=Qfhf6i_Yjkc)
+- [Unsplash photo](https://unsplash.com/photos/1cvEeuJKYto) by [Larm Rmah](https://unsplash.com/@larm)
+- [Imágenes del código por Carbon](https://carbon.now.sh/)
