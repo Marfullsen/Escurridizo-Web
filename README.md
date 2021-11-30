@@ -9,7 +9,7 @@
 
 [![Forked](https://img.shields.io/badge/Forked%20from-ripexz-green)](https://github.com/ripexz/dungeon-treasure-hunt)
 [![Pascal Code](https://img.shields.io/badge/Code-Pascal-blue.svg)](https://github.com/Marfullsen/hybrid-collage/blob/master/game-escurridizo.pas)
-[![PlayHere!](https://img.shields.io/github/Play-Here-darkgreen.svg)](https://marfullsen.github.io/Escurridizo-the-game/)
+[![PlayHere!](https://img.shields.io/badge/Play-Here-green.svg)](https://marfullsen.github.io/Escurridizo-the-game/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.txt)
 
 </div>
@@ -34,7 +34,7 @@ Escurridizo fue un problema planteado para el segundo certamen de la asignatura 
 
 <p align="center">
   <a href="https://marfullsen.github.io/Escurridizo-the-game/" rel="noopener">
- <img width=200px height=200px src="./docs/img/matrix.png" alt="Matrix"></a>
+ <img src="./docs/img/matrix.png" alt="Matrix"></a>
 </p>
 
 Una vez terminado el certamen, me dispuse a realizar un algoritmo que creara una matriz para un laberinto que siempre fuera distinto, a ese código le llamé **motor para crear laberintos al azar**. Escribí el código del motor en lenguaje **Python** e hice la adaptación para que funcionara en JavaScript, logrando así reemplazar _el motor lógico_ al código del juego [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) escrito por [ripexz](https://github.com/ripexz/).
@@ -49,7 +49,7 @@ El desarrollo del juego se divide en tres partes:
 
 <p align="center">
   <a href="./docs/code/laberinto_a_puntos.py" rel="noopener">
- <img width=200px height=200px src="./docs/img/escurridizo-python.png" alt="Juego python"></a>
+ <img src="./docs/img/escurridizo-python.png" alt="Juego python"></a>
 </p>
 
 3. Transcripción del _motor lógico_ al lenguaje JavaScript para reemplazar el motor de [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) y crear la versión definitiva de [Escurridizo](https://marfullsen.github.io/Escurridizo-the-game/).
@@ -77,13 +77,13 @@ Para jugar:
 ## ⛏️ Tecnologías usadas <a name = "built_using"></a>
 
 ### 🔧 Bosquejos
-- [Pascal](https://www.freepascal.org/) - Programming language
-- [Python](https://www.python.org/) - Programming language
-- [Vanilla JavaScript](https://www.javascript.com/) - Programming language
+- [Pascal](https://www.freepascal.org/) - Lenguaje de programación
+- [Python](https://www.python.org/) - Lenguaje de programación
+- [Vanilla JavaScript](https://www.javascript.com/) - Lenguaje de programación
 
 ### 🔧 De la bifurcación (del Fork).
-- [Mdernizr](https://modernizr.com/) -  JavaScript library
-- [Sizzle](https://sizzlejs.com/) - Hot Selector Engine.
+- [Mdernizr](https://modernizr.com/) -  Biblioteca de JavaScript
+- [Sizzle](https://sizzlejs.com/) - Motor de seleccionado rápido para jQuery.
 
 ## ✍️ Autores <a name = "authors"></a>
 
@@ -91,11 +91,16 @@ Para jugar:
 
 <p align="center">
   <a href="./docs/img/labyrinth-sketch.png" rel="noopener">
- <img width=200px height=200px src="./docs/img/labyrinth-sketch.png" alt="Bosquejos"></a>
+ <img src="./docs/img/labyrinth-sketch.png" alt="Bosquejos"></a>
 </p>
 
 ### Bifurcado de (Forkeado de)
 - [@ripexz](https://github.com/ripexz/) - Developed a Bomberman-like game.
+
+<p align="center">
+  <a href="./docs/img/dungeon-treasure-hunt.png" rel="noopener">
+ <img src="./docs/img/dungeon-treasure-hunt.png" alt="Forked_from_game"></a>
+</p>
 
 ## 🎉 Agradecumientos <a name = "acknowledgement"></a>
 
