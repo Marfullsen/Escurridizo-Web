@@ -41,7 +41,7 @@ hunt.screens["game-screen"] = (function(){
 			player.bombCount = player.bombCountMax;
 			display.initialise(function(){
 				display.redraw(board.getBoard(), function(){
-					announce("Level " + gameState.level);
+					announce("level " + gameState.level);
 				});
 			});
 		});

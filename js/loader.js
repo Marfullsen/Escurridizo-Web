@@ -9,8 +9,8 @@ var hunt = {
 		bombCount: 1
 	},
 	settings: {
-		rows: 16,
-		cols: 16,
+		rows: 15,
+		cols: 15,
 		bombTime: 1200,
 		baseLevelTimer: 45000,
 		controls: {

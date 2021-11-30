@@ -21,27 +21,39 @@ hunt.board = (function() {
 	}
 
 	function fillBoard() {
-		var x, y;
-		squares = [],
+		var x, y, azar;
+		squares = [];
 		exit = false;
 		for ( x = 0; x < cols; x++ ) {
 			squares[x] = [];
 			for ( y = 0; y < rows; y++ ) {
 				squares[x][y] = "blank";
-				if ((Math.random() > 0.4) && (x > 1 || y > 1)) {
-					if (Math.random() > 0.7) {
+			}
+		}
+		for ( x = 0; x < cols; x++ ) {
+			//squares[x] = [];
+			for ( y = 0; y < rows; y++ ) {
+				//squares[x][y] = "blank";
+				if (!(x%2==0)) {
+					if (y%2==1) {
 						squares[x][y] = "solid";
-					}
-					else {
-						squares[x][y] = "brick";
-					}
-				}
-				if ((Math.random() > 0.5) && (x > 10 && y > 10) && exit == false) {
+						//We can use the Math.floor((Math.random() * 4) + 1);
+						//But we prefer to reuse the old code :)
+						//Frederic Merlot 2017, JUNIO! 
+						azar = Math.random()
+						if (azar < 0.2){squares[x+1][y] = "brick";}
+						else if (azar < 0.5){squares[x-1][y] = "brick";}
+						else if (azar < 0.75){squares[x][y+1] = "brick";}
+						else if (azar > 0.74){squares[x][y-1] = "brick";}
+						if ((Math.random() > 0.5) && (x > 10 && y > 10) && exit == false) {
 					squares[x][y] = "exit";
 					exit = true;
+					}
+					}
 				}
 			}
 		}
+		
 		if ( !exit ) {
 			fillBoard();
 		}
@@ -318,4 +330,4 @@ hunt.board = (function() {
 		plantBomb: plantBomb,
 		print: print
 	};
-})();
+}) ();

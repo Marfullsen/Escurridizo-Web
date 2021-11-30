@@ -35,7 +35,7 @@ hunt.game = (function() {
 			0.25, 0.25, 0.5,
 			0.25, 0.25, 1
 		);
-		gradient.addColorStop(0, "rgb(50,50,50)");
+		gradient.addColorStop(0, "rgb(0,0,100)");
 		gradient.addColorStop(1, "rgb(10,10,10)");
 		ctx.fillStyle = gradient;
 		ctx.fillRect(0, 0, 1, 1);
