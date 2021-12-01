@@ -9,7 +9,7 @@
 
 [![Forked](https://img.shields.io/badge/Forked%20from-ripexz-green)](https://github.com/ripexz/dungeon-treasure-hunt)
 [![Pascal Code](https://img.shields.io/badge/Code-Pascal-blue.svg)](https://github.com/Marfullsen/hybrid-collage/blob/master/game-escurridizo.pas)
-[![PlayHere!](https://img.shields.io/badge/Play-Here-green.svg)](https://marfullsen.github.io/Escurridizo-the-game/)
+[![PlayHere!](https://img.shields.io/badge/¡Juega-Aquí!-green.svg)](https://marfullsen.github.io/Escurridizo-the-game/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.txt)
 
 </div>
@@ -21,7 +21,7 @@
 ## 📝 Contenidos
 
 - [Sobre el juego](#about)
-- [Versiones](#getting_started)
+- [Fases](#getting_started)
 - [Desarrollo](#deployment)
 - [¿Cómo se juega?](#usage)
 - [Tecnologías usadas](#built_using)
@@ -39,7 +39,7 @@ Escurridizo fue un problema planteado para el segundo certamen de la asignatura 
 
 Una vez terminado el certamen, me dispuse a realizar un algoritmo que creara una matriz para un laberinto que siempre fuera distinto, a ese código le llamé **motor para crear laberintos al azar**. Escribí el código del motor en lenguaje **Python** e hice la adaptación para que funcionara en JavaScript, logrando así reemplazar _el motor lógico_ al código del juego [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) escrito por [ripexz](https://github.com/ripexz/).
 
-## 🏁 Versiones <a name = "getting_started"></a>
+## 🏁 Fases <a name = "getting_started"></a>
 
 El desarrollo del juego se divide en tres partes:
 1. Realización del certamen escrito a mano con código en **Pascal**.
@@ -98,7 +98,7 @@ Para jugar:
 - [@ripexz](https://github.com/ripexz/) - Developed a Bomberman-like game.
 
 <p align="center">
-  <a href="./docs/img/dungeon-treasure-hunt.png" rel="noopener">
+  <a href="https://ripexz.github.io/dungeon-treasure-hunt/" rel="noopener">
  <img src="./docs/img/dungeon-treasure-hunt.png" alt="Forked_from_game"></a>
 </p>
 
