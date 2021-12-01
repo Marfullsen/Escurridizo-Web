@@ -55,6 +55,16 @@ El desarrollo del juego se divide en tres partes:
 3. Transcripción del _motor lógico_ al lenguaje JavaScript para reemplazar el motor de [Dungeon Treasure Hunt](https://github.com/ripexz/dungeon-treasure-hunt) y crear la versión definitiva de [Escurridizo](https://marfullsen.github.io/Escurridizo-the-game/).
 
 ## 🚀 Desarrollo <a name = "deployment"></a>
+
+Los videojuegos de laberintos por lo general se basan en matrices bidimensionales, el desarrollo de este juego sigue la misma lógica.
+
+<p align="center">
+  <a href="./docs/code/logica-matrices.jpg" rel="noopener">
+ <img src="./docs/img/logica-matrices.jpg" alt="Lógica de las matricess"></a>
+</p>
+
+### Lanzar el juego en un servidor local
+
 Se recomienda levantar un servidor, aunque también funcionará ingresando directamente al archivo **index.html** con un navegador.
 
 **Listado de servidores**
@@ -74,10 +84,21 @@ Para jugar:
 - **Las flechas de dirección** para desplazamiento.
 - Tecla **Espacio** para plantar una bomba.
 
+<p align="center">
+  <a href="./docs/code/bomb.png" rel="noopener">
+ <img src="./docs/img/bomb.png" alt="Bomba"></a>
+</p>
+
 ## ⛏️ Tecnologías usadas <a name = "built_using"></a>
 
 ### 🔧 Bosquejos
 - [Pascal](https://www.freepascal.org/) - Lenguaje de programación
+
+<p align="center">
+  <a href="https://github.com/Marfullsen/hybrid-collage/blob/master/game-escurridizo.pas" rel="noopener">
+ <img src="./docs/img/escurridizo-pascal.png" alt="Bosquejo Pascal"></a>
+</p>
+
 - [Python](https://www.python.org/) - Lenguaje de programación
 - [Vanilla JavaScript](https://www.javascript.com/) - Lenguaje de programación
 
