@@ -4,7 +4,64 @@
 }
 body {
 	margin: 0;
+	-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
+
+.flex {
+	display: flex;
+}
+
+.rotate45 {
+	transform: rotate(45deg);
+}
+
+.z10 {
+	z-index: 10;
+}
+
+.arrow-btn {
+	width: 25px;
+	height: 25px;
+}
+
+.chevron::before {
+	color: #FFF;
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-90deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(0deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-180deg);
+}
+
+#floating-controls {
+	position:fixed;
+	bottom:40px;
+	right:40px;
+}
+
 #game {
 	position: absolute;
 	top: 0;
@@ -144,10 +201,11 @@ ul.menu li button:active {
 /*============= GAME BOARD =============*/
 #game-screen .game-board {
 	position: relative;
-	margin: 1.5em 1em 0.5em 1em;
-	width: 16em;
-	height: 16em;
+	margin: 5px; 
+	width: 100vw;
+	height: 100vh;
 	-webkit-perspective: 16em;
+	perspective: 16em;
 }
 
 #game-screen .game-board .board-bg, #game-screen .game-board .board {

@@ -2,6 +2,7 @@
 <html lang="en-GB">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>Escurridizo</title>
 		<link href='http://fonts.googleapis.com/css?family=Orbitron:400,900|Press+Start+2P' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.css" />
@@ -49,6 +50,16 @@
 				<p>Click dondesea para volver al menú principal.</p>
 			</div>
 			<div id="grid-proto" class="grid-size"></div>
+		</div>
+		<div id="floating-controls" class="rotate45 z10">
+			<div class="flex">
+				<div id="top-btn" class="chevron top arrow-btn" onclick="console.log('up')"></div>
+				<div id="right-btn" class="chevron right arrow-btn" onclick="console.log('right')"></div>
+			</div>
+			<div class="flex">
+				<div id="left-btn" class="chevron left arrow-btn" onclick="console.log('left')"></div>
+				<div id="bottom-btn" class="chevron bottom arrow-btn" onclick="console.log('bottom')"></div>
+			</div>
 		</div>
 	</body>
 </html>

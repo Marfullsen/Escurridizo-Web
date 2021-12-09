@@ -15,6 +15,14 @@ hunt.input = (function(){
 	function initialise() {
 		inputHandlers = {};
 		var board = $("#game-screen .game-board")[0];
+		let top = document.getElementById('top-btn');
+		let right = document.getElementById('right-btn');
+		let left = document.getElementById('left-btn');
+		let bottom = document.getElementById('bottom-btn');
+		top.onclick = e => trigger('moveUp');
+		right.onclick = e => trigger('moveRight');
+		left.onclick = e => trigger('moveLeft');
+		bottom.onclick = e => trigger('moveDown');
 		dom.bind(document, "keydown", function(e) {
 			var keyName = keys[e.keyCode];
 			if ( keyName && settings.controls[keyName] ) {

@@ -41,7 +41,11 @@ hunt.board = (function() {
 						//But we prefer to reuse the old code :)
 						//Frederic Merlot 2017, JUNIO! 
 						azar = Math.random()
-						if (azar < 0.2){squares[x+1][y] = "brick";}
+						if (azar < 0.2){
+							if (squares[x+1][y]){
+								squares[x+1][y] = "brick";
+							}
+						}
 						else if (azar < 0.5){squares[x-1][y] = "brick";}
 						else if (azar < 0.75){squares[x][y+1] = "brick";}
 						else if (azar > 0.74){squares[x][y-1] = "brick";}
